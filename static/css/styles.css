@@ -1,0 +1,301 @@
+#logo{
+width:60%;
+height:60%;
+}
+
+.navbar-brand{
+width:10%;
+height:10%;
+}
+
+
+.top-container {
+background-color:#C4DDFF;
+position:relative;
+padding-top:200px;
+}
+
+.middle-container {
+padding:100px 0;
+}
+
+.bottom-container {
+background-color:#66BFBF;
+padding:50px 0 20px;
+}
+
+.footer-link {
+color:#11999E;
+padding:20px;
+}
+
+.copyright {
+padding-top:20px;
+color:#EAF6F6;
+font-size: 0.75rem;
+}
+
+p {
+font-size: 25px;
+line-height:2;
+}
+
+.skill-row {
+width: 50%;
+padding:100px 100px 0;
+text-align: left;
+}
+
+.coding {
+width:50%;
+
+margin:20px 30px;
+}
+
+.autocad {
+width:25%;
+float:right;
+margin-left:30px;
+}
+
+
+h1 {
+font-size: 8vw;
+margin-top: 50px;
+font-family: 'Pacifico', cursive;
+color:#66BFBF;
+line-height:2;
+}
+
+h2 {
+font-size:3.5rem;
+font-family: 'Montserrat', sans-serif;
+color:#66BFBF;
+font-weight:normal;
+}
+
+h3 {
+font-family: 'Montserrat', sans-serif;
+color:#11999E;
+}
+
+a {
+color:#11999E;
+font-family: 'Montserrat', sans-serif;
+margin:10px 20px;
+text-decoration:none;
+}
+
+a:hover {
+color:#EAF6F6;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.bottom-cloud {
+position: absolute;
+left:250px;
+bottom:300px;
+}
+
+.top-cloud {
+position:absolute;
+right:300px;
+top:100px;
+margin-top:50px;
+}
+
+hr {
+border: dotted #EAF6F6 6px;
+border-bottom:none;
+width:4%;
+margin:100px auto;
+}
+
+.contact-message {
+margin:40px auto 60px;
+}
+
+
+
+
+
+
+#mainNav {
+  position: absolute;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+#mainNav .navbar-nav > li.nav-item > a {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  padding: 10px 10px;
+  color: #5584AC;
+}
+
+#mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+  color:#66BFBF;
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    border-bottom: 1px solid transparent;
+    background: transparent;
+    transition: background-color 0.2s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color:#5584AC
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, hide the header right above the viewport */
+    position: fixed;
+    top: -120px;
+    transition: transform 0.2s;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+#profile-pic{
+width:50%;
+height:100%;
+border-radius:50%;
+border: 7px solid #66BFBF;
+
+}
+
+.intro {
+padding:100px 100px 0;
+}
+
+.skills {
+background-color:#C4DDFF;
+padding:100px 100px ;
+}
+
+
+/* Contact section specific */
+#contact .container-fluid{
+  padding: 1% 10%;
+}
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.face.back {
+  transform: rotateY(180deg);
+  z-index: 4;
+  /* frontface-visibility: hidden; */
+}
+
+/* Green circles */
+
+.green-circle {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #66BFBF;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.title-circle {
+  width: 45%;
+  padding-bottom: 43%;
+  margin: 10% auto;
+  border-width: 10px;
+  margin-bottom: 10%;
+}
+
+/* Glow title circle?
+.title-circle:hover {
+  box-shadow: 0 0 30px #EAFF50;
+}
+*/
+
+.contact-circle {
+  width: 80%;
+  padding-bottom: 78%;
+  border-width: 10px;
+  margin-bottom: 10%;
+  background-color: white;
+}
+
+.contact-title {
+  margin-top: 40%;
+  right: 24%;
+}
+
+.contact-text {
+  padding-top: 32%;
+}
+
+.contact-text p {
+  position: relative;
+  text-align: center;
+  line-height: 2;
+}
+.contact-text p:hover {
+  color: #66BFBF;
+  cursor: pointer;
+}
+
+.contact-text a {
+  color: #545454;
+}
+.contact-text a:hover {
+  color: #66BFBF;
+}
+
+.grey-box{
+  background-color: #545454;
+  color: #ffffff
+}
+
+.container-fluid.copyright-strip {
+  padding: 1%;
+}
+
+.container-fluid.copyright-strip p {
+font-size: 20px;
+line-height:1.75;
+}
