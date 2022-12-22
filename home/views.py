@@ -3,9 +3,14 @@ from datetime import datetime
 from home.models import Project
 import pymongo
 from pymongo import MongoClient
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+password = os.getenv("PASS")
 
 # Replace the uri string with your MongoDB deployment's connection string.
-uri = "mongodb+srv://Sushmit12:HhlXbuNdurVP1o1g@cluster0.5m6gsdn.mongodb.net/test"
+uri = f"mongodb+srv://Sushmit12:{password}@cluster0.5m6gsdn.mongodb.net/test"
 
 client = MongoClient(uri)
 
@@ -47,4 +52,4 @@ def portfolio(request):
 def services(request):
     return HttpResponse('This is services page')
 
-    # HhlXbuNdurVP1o1g
+    
