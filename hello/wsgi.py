@@ -12,7 +12,7 @@ import sys
 
 from django.core.wsgi import get_wsgi_application
 
-sys.path.append('C:\\Users\\hp\\Desktop\\New folder\\hello')
+sys.path.append('C:\\Users\\hp\\Desktop\\New folder\\hello\Lib')
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hello.settings')
 
