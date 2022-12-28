@@ -8,8 +8,11 @@ https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/
 """
 
 import os
+import sys
 
 from django.core.wsgi import get_wsgi_application
+
+sys.path.append('C:\\Users\\hp\\Desktop\\New folder\\hello')
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hello.settings')
 
